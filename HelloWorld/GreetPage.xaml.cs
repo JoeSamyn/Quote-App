@@ -8,7 +8,8 @@ namespace HelloWorld
 
     public partial class GreetPage : ContentPage
     {
-        int index = 0;
+        private int index = 0;
+        private int i = 0;
         private string[] quotes =
         {
              "Whatever the mind of man can conceive and believe, it can" +
@@ -18,6 +19,14 @@ namespace HelloWorld
              "I attribute my success to this: I never gave or took any" +
              " excuse.",
              "You miss 100% of the shots you don’t take."
+        };
+
+        private string[] buttonText =
+        {
+            "Hey",
+            "Whats Up",
+            "Keep Clicking",
+            "What is new"
         };
 
         public GreetPage()
@@ -37,6 +46,16 @@ namespace HelloWorld
                 index = 0;
             }
             label.Text = quotes[index];
+        }
+
+        void Handle_Clicked_1(object sender, System.EventArgs e)
+        {
+            i++;
+            if(i >= buttonText.Length)
+            {
+                i = 0;
+            }
+            button1.Text = buttonText[i];
         }
     }
 }
