@@ -11,7 +11,7 @@ namespace HelloWorld
         {
             InitializeComponent();
             // sets starting page of application
-            MainPage = new GreetPage();
+            MainPage = new Relax();
         }
 
         protected override void OnStart()
