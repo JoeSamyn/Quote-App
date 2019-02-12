@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HelloWorld.RelLayoutPricePage">
+    <RelativeLayout>
+        <BoxView BackgroundColor="#f7f7f7"
+                 x:Name="banner"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.3}"/>
+        <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.3}"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center">
+            <Label Text="$11.95"
+                   FontSize="50"
+                   FontAttributes="Bold"/>
+            <Button Text="Add $7.99 Credit"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    BorderRadius="15"
+                    HeightRequest="30"
+                    BackgroundColor="#1695A3"/>
+        </StackLayout>
+        <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=banner, Property=Height, Factor=1, Constant=20}">
+            <Label Text="Why pay for credit?"
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+            <Label HorizontalTextAlignment="Center"
+                   FontSize="13">
+                So, the space between the banner and the description is 0.2 of the page height. The bigger the device, the more space between these two elements.
+            </Label>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>

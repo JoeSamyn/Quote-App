@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace HelloWorld
 {
-    public partial class RelativeLayout : ContentPage
+    public partial class RelLayoutPricePage : ContentPage
     {
-        public RelativeLayout()
+        public RelLayoutPricePage()
         {
             InitializeComponent();
         }

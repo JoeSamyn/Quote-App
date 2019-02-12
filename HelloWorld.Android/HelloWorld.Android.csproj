@@ -82,6 +82,10 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\clock.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\clock.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\clock.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\clock.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
